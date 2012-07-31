@@ -14,6 +14,8 @@ Requires:	i2p zenity
 Requires(post):   desktop-file-utils
 Requires(postun): desktop-file-utils
 
+BuildArch: 	noarch
+
 %description
 Desktop files for the I2P BitTorrent client i2psnark.
 
