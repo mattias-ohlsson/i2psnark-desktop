@@ -1,0 +1,17 @@
+#!/bin/bash
+# Add url to i2psnark
+# by Mattias Ohlsson <mattias.ohlsson@inprose.com>
+
+# Define i2psnark URL
+i2psnark="http://localhost:7657/i2psnark/"
+
+# Get the secret nonce from i2psnark 
+# curl -s = silent
+# use tail to skip nonce from messages
+nonce=$(curl -s $i2psnark | grep "nonce" | tail -n1 | cut -b 42-59)
+
+echo "Nonce: $nonce"
+
+curl -s -X POST -d "nonce=$nonce&action=Add&newURL=$1" $i2psnark
+
+xdg-open $i2psnark
