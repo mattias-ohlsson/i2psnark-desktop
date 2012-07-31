@@ -4,6 +4,7 @@ VERSION=$(shell awk '/Version/ { print $$2 }' *.spec)
 all:
 
 install:
+	@install -D i2psnark-add ${PREFIX}/usr/bin/i2psnark-add
 	# We need to specify dir to use the prefix 
 	@desktop-file-install --dir=${PREFIX}/usr/share/applications/ \
 	i2psnark.desktop
