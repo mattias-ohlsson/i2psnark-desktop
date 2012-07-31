@@ -116,6 +116,6 @@ Comment[zh_TW]=透過 I2P BitTorrent 協定來下載和分享檔案
 Exec=zenity --info --text "Use I2PSnark\n\nPaste this URL in I2PSnark:\n\n%U" && xdg-open http://localhost:7657/i2psnark
 Terminal=false
 NoDisplay=true
-Type=Link
+Type=Application
 MimeType=x-scheme-handler/magnet;
 Categories=Network;FileTransfer;P2P;X-I2P;
