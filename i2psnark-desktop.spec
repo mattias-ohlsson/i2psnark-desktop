@@ -9,7 +9,7 @@ License:	GPL
 URL:		http://www.i2p2.de
 Source0:	%{name}-%{version}.tar.bz2
 
-#BuildRequires:
+BuildRequires:	desktop-file-utils
 Requires:	i2p zenity
 Requires(post):   desktop-file-utils
 Requires(postun): desktop-file-utils
