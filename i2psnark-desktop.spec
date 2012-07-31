@@ -23,8 +23,6 @@ Desktop files for the I2P BitTorrent client i2psnark.
 
 
 %build
-%configure
-make %{?_smp_mflags}
 
 
 %install
