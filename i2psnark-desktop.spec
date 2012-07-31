@@ -1,5 +1,5 @@
 Name:		i2psnark-desktop
-Version:	0.2
+Version:	0.9
 Release:	1%{?dist}
 Summary:	Desktop files for i2psnark
 
@@ -48,4 +48,5 @@ make install PREFIX=%{buildroot}
 %{_bindir}/i2psnark-add
 
 %changelog
-
+* Tue Jul 31 2012 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 0.9-1
+- Initial package
