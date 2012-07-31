@@ -10,7 +10,10 @@ URL:		http://www.i2p2.de
 Source0:	%{name}-%{version}.tar.bz2
 
 BuildRequires:	desktop-file-utils
-Requires:	i2p zenity
+
+# xdg-utils - open i2psnark in browser (xdg-open)
+# curl - get and post to i2psnark
+Requires:	i2p curl xdg-utils
 Requires(post):   desktop-file-utils
 Requires(postun): desktop-file-utils
 
